@@ -254,7 +254,7 @@
         obj.corner = null;
         obj.contextMenu = null;
         obj.textarea = null;
-        obj.ads = null;
+        // obj.ads = null;
         obj.content = null;
         obj.table = null;
         obj.thead = null;
@@ -611,20 +611,20 @@
             });
     
             // Powered by jExcel
-            var ads = document.createElement('a');
-            ads.setAttribute('href', 'https://bossanova.uk/jexcel/');
-            obj.ads = document.createElement('div');
-            obj.ads.className = 'jexcel_about';
-            if (typeof(sessionStorage) !== "undefined" && ! sessionStorage.getItem('jexcel')) {
-                sessionStorage.setItem('jexcel', true);
-                var img = document.createElement('img');
-                img.src = '//bossanova.uk/jexcel/logo.png';
-                ads.appendChild(img);
-            }
-            var span = document.createElement('span');
-            span.innerHTML = 'Jexcel spreadsheet';
-            ads.appendChild(span);
-            obj.ads.appendChild(ads);
+            // var ads = document.createElement('a');
+            // ads.setAttribute('href', 'https://bossanova.uk/jexcel/');
+            // obj.ads = document.createElement('div');
+            // obj.ads.className = 'jexcel_about';
+            // if (typeof(sessionStorage) !== "undefined" && ! sessionStorage.getItem('jexcel')) {
+            //     sessionStorage.setItem('jexcel', true);
+            //     var img = document.createElement('img');
+            //     img.src = '//bossanova.uk/jexcel/logo.png';
+            //     ads.appendChild(img);
+            // }
+            // var span = document.createElement('span');
+            // span.innerHTML = 'Jexcel spreadsheet';
+            // ads.appendChild(span);
+            // obj.ads.appendChild(ads);
 
             // Create table container TODO: frozen columns
             var container = document.createElement('div');
@@ -657,7 +657,7 @@
             el.appendChild(obj.content);
             el.appendChild(obj.pagination);
             el.appendChild(obj.contextMenu);
-            el.appendChild(obj.ads);
+            // el.appendChild(obj.ads);
             el.classList.add('jexcel_container');
     
             // Create toolbar
